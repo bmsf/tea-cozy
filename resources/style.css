@@ -1,51 +1,161 @@
+/* Universal Styles */
+
 body {
-    font-family: Helvetica;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
 }
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+div {
+  display: block;
+}
+
+/* Header section */
 
 img.header-photo {
-    height: 50px;
-    padding-left: 10px;
+  height: 50px;
+  padding-left: 10px;
 }
 
+.flex-container-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
 .flex-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
- header {
-    top: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    height: 69px;
-    background-color: black;
-    border-bottom: 1px solid seashell;
-    align-items: center;
- }
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+}
 
 .nav-bar-flex {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 nav span {
-    display: inline-block;
-    padding: 20px 10px;
-    text-decoration: underline;
-    word-spacing: 5px;
+  display: inline-block;
+  padding: 20px 10px;
+  text-decoration: underline;
+  word-spacing: 5px;
+}
+/* Main Section */
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
 }
 
-.top-background-image {
-    height: 700px;
-    width: 1200px;
-    background-image: url("/Users/bmsf/Documents/Development/tea-cozy/resources/images/img-mission-background.webp");
-    padding-top: 70px;
-    margin: auto;
-    position: relative;
+/* Mission Section */
+
+#mission {
+  height: 700px;
+  background-image: url("C:/Users/fromr/Desktop/Utvikling/Development/Codecademy/tea-cozy-master/tea-cozy-master/resources/images/img-mission-background.webp");
+  padding-top: 70x;
+}
+
+#mission .content {
+  margin: auto;
+  background-color: black;
+  width: 100%;
+}
+
+/* Store Section */
+
+#store {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.item {
+  padding: 5px;
+}
+
+.item img {
+  height: 200px;
+  margin: 10px;
+  display: block;
+}
+
+.item span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Location Section */
+
+#locations {
+  height: 500px;
+  background-image: url("C:/Users/fromr/Desktop/Utvikling/Development/Codecademy/tea-cozy-master/tea-cozy-master/resources/images/img-locations-background.webp");
+  padding-top: 70px;
+  margin-top: 50px;
+}
+
+.flex-container.locations {
+  padding-top: 5px;
+}
+
+#locations .flex-container {
+  margin: auto;
+  width: 1100px;
+}
+
+.location {
+  opacity: 1;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contact Section */
+
+#contact {
+  height: 200px;
+}
+/* Footer Section */
+
+footer {
+  text-align: left;
+  margin-left: 20px;
 }
